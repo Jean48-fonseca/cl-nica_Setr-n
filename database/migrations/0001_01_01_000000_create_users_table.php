@@ -16,7 +16,14 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            
+            // 1. Hacemos que el password sea nullable (opcional)
+            $table->string('password')->nullable(); 
+            
+            // 2. Agregamos los campos para redes sociales
+            $table->string('social_id')->nullable();
+            $table->string('social_provider')->nullable();
+            
             $table->rememberToken();
             $table->timestamps();
         });

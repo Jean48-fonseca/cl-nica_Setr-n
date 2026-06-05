@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dates extends Model
 {
-    //
+    protected $table = 'dates';
+    protected $fillable = [
+        'patient_id', 'doctor_id', 'appointment_date', 'motivo', 'status'
+    ];
 }
