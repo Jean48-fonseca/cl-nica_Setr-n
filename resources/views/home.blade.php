@@ -22,7 +22,7 @@
         </h2>
 
         <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-12 uppercase tracking-wide drop-shadow-md text-center">
-            Sistema de Gestión SANAR +
+            Sistema de Gestión SENTRA +
         </h1>
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 w-full max-w-6xl">

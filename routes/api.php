@@ -15,12 +15,6 @@ Route::apiResource('citas', DateController::class);
 Route::apiResource('diagnosticos', DiagnosisController::class);
 Route::apiResource('tratamientos', TreatmentController::class);
 Route::apiResource('medicamentos', MedicationController::class);
-// Busca esta línea y solo añádele ->name('pacientes.create'); al final
-// 1. PRIMERO las rutas estáticas (create, edit, etc.)
-Route::get('/pacientes/create', [App\Http\Controllers\PatientController::class, 'create'])->name('pacientes.create');
-
-// 2. DESPUÉS las rutas dinámicas (las que llevan llaves {})
-Route::get('/pacientes/{id}', [App\Http\Controllers\PatientController::class, 'show'])->name('pacientes.show');
 
 //sistema de seguiridad predeterminado de laravel, para proteger las rutas de la api, solo los usuarios autenticados podrán acceder a estas rutas
 Route::middleware('auth:sanctum')->group(function () {
